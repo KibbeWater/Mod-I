@@ -1,0 +1,20 @@
+//
+// Created by kibbe on 2025-04-04.
+//
+
+#ifndef MEMORY_H
+#define MEMORY_H
+
+#include <windows.h>
+
+namespace MEM
+{
+    PVOID PatternScan(PVOID pModule, const char* szPattern, int iOffset = 0); // Pattern scanner to scan 1 module
+    PVOID PatternScan(const char* szPattern, int iOffset = 0); // Pattern scanner to scan ALL memory
+    PVOID PatternScan(const char* szModule, const char* szPattern, int iOffset = 0); // Pattern scanner dynamic, but bad secure bc string based module
+
+    PVOID FromRelative(PVOID pAddress); // Address to relative convert to absoulte address
+    PVOID PatternScanRel(const char* szModule, const char* szPattern, int iOffset = 0); // Relative pattern scan
+}
+
+#endif //MEMORY_H
