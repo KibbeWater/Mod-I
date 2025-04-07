@@ -4,11 +4,9 @@
 
 std::vector<Unity::il2cppMethodInfo*> cachedMethods = std::vector<Unity::il2cppMethodInfo*>();
 
-void UnityHelpers::Initialize() {
-    cachedMethods.clear();
-
+void cacheModule(const char *moduleName) {
     auto classList = std::vector<Unity::il2cppClass*>();
-    IL2CPP::Class::FetchClasses(&classList, "Assembly-CSharp", "ScheduleOne.Money");
+    IL2CPP::Class::FetchClasses(&classList, moduleName, nullptr);
 
     for (size_t i = 0; i < classList.size(); i++) {
         auto methodList = std::vector<Unity::il2cppMethodInfo*>();
@@ -20,6 +18,13 @@ void UnityHelpers::Initialize() {
     }
 }
 
+void UnityHelpers::Initialize() {
+    cachedMethods.clear();
+
+    cacheModule("Assembly-CSharp");
+    cacheModule("FishNet.Runtime");
+}
+
 Unity::il2cppMethodInfo* UnityHelpers::FindMethod(const char* methodName, int args) {
     for (size_t i = 0; i < cachedMethods.size(); i++)
         if (!strcmp(methodName, cachedMethods[i]->m_pName) && (args == -1 || cachedMethods[i]->m_uArgsCount == args))
@@ -27,7 +32,7 @@ Unity::il2cppMethodInfo* UnityHelpers::FindMethod(const char* methodName, int ar
     return nullptr;
 }
 
-Unity::il2cppMethodInfo * UnityHelpers::FindMethod(const char *methodName, const char *className, int args) {
+Unity::il2cppMethodInfo * UnityHelpers::FindMethodByClass(const char *methodName, const char *className, int args) {
     for (size_t i = 0; i < cachedMethods.size(); i++)
         if (!strcmp(methodName, cachedMethods[i]->m_pName) && !strcmp(className, cachedMethods[i]->m_pClass->m_pName) && (args == -1 || cachedMethods[i]->m_uArgsCount == args))
             return cachedMethods[i];

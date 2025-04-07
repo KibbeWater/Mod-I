@@ -41,6 +41,7 @@
 // Hooks
 #include "Hooks/MoneyManager.h"
 #include "Hooks/TimeManager.h"
+#include "Hooks/Player.h"
 #include "Hooks/Hook.h"
 
 // Menu

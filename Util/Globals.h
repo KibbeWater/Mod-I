@@ -10,7 +10,11 @@ namespace G {
 
     // Subsystems
     inline ScheduleOne_Money_MoneyManager_o* m_iMoneyManager = nullptr;
-    inline bool m_bAdd10k = false;
+    inline ScheduleOne_GameTime_TimeManager_o* m_iGameTimeManager = nullptr;
+}
+
+namespace F {
+    inline bool m_bOnePlayerSleep = false;
 }
 
 #endif //GLOBALS_H

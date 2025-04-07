@@ -17,6 +17,7 @@ void Menu::Render() {
         {
             ImGui::Text("Active Subsystems:");
             ImGui::Text((G::m_iMoneyManager != nullptr) ? "Money Manager: Enabled" : "Money Manager: Inactive");
+            ImGui::Text((G::m_iGameTimeManager != nullptr) ? "Game Time: Enabled" : "Game Time: Inactive");
         }
 
         if (G::m_iMoneyManager != nullptr && ImGui::CollapsingHeader("Money Manager")) {

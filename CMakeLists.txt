@@ -92,6 +92,14 @@ add_library(Mod_I SHARED Main.cpp
         Util/Unity.h
         Hooks/TimeManager.cpp
         Hooks/TimeManager.h
+        Hooks/Player.cpp
+        Hooks/Player.h
+        GameAPI/InstanceFinder/Instance.cpp
+        GameAPI/InstanceFinder/Instance.h
+        GameAPI/NetworkManager/NetworkManager.cpp
+        GameAPI/NetworkManager/NetworkManager.h
+        GameAPI/Player/Player.cpp
+        GameAPI/Player/Player.h
 )
 
 target_include_directories(Mod_I PUBLIC

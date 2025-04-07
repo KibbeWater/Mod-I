@@ -5,7 +5,7 @@
 #ifndef HOOK_H
 #define HOOK_H
 
-#define DO_HOOK(FuncAdr, Class, Function) if (MH_CreateHook(FuncAdr, &##Class##::hk##Function##, &##Class##::p##Function##) != MH_OK) { return false; }
+#define DO_HOOK(FuncAdr, Class, Function) if (MH_CreateHook(FuncAdr, (LPVOID)&##Class##::hk##Function##, &##Class##::p##Function##) != MH_OK) { return false; }
 
 namespace Hook {
     bool Init();

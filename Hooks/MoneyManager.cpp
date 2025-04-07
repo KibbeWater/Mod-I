@@ -11,12 +11,5 @@ bool __fastcall Hook::MoneyManager::hkCreateOnlineTransaction(ScheduleOne_Money_
 
     std::cout << "Created Transaction: " << transactionName.ToString() << " (" << amount << " x" << quantity << ") " << transactionNote.ToString() << std::endl;
 
-    if (G::m_bAdd10k) {
-        std::cout << "Adding 10k on game thread..." << std::endl;
-
-        GameAPI::MoneyManager::ChangeBalance(10000);
-        G::m_bAdd10k = false;
-    }
-
     return oCreateOnlineTransaction(pThis, transactionName, amount, quantity, transactionNote);
 }
