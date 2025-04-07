@@ -13,6 +13,7 @@
 #include <mutex>
 #include <dxgi.h>
 #include <d3d11.h>
+#include <functional>
 
 // Third party libs
 #include <MinHook.h>
@@ -29,6 +30,7 @@
 #include "Util/Globals.h"
 #include "Util/Memory.h"
 #include "Util/game_thread.h"
+#include "Util/Unity.h"
 
 // GameAPI
 #include "GameAPI/GameAPI.h"
@@ -38,6 +40,7 @@
 
 // Hooks
 #include "Hooks/MoneyManager.h"
+#include "Hooks/TimeManager.h"
 #include "Hooks/Hook.h"
 
 // Menu

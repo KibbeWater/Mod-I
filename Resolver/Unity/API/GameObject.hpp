@@ -17,7 +17,7 @@ namespace Unity
 		void* m_SetActive = nullptr;
 		void* m_SetLayer = nullptr;
 	};
-	GameObjectFunctions_t m_GameObjectFunctions;
+	inline GameObjectFunctions_t m_GameObjectFunctions;
 
 	class CGameObject : public CObject
 	{
@@ -126,7 +126,7 @@ namespace Unity
 			Quad,
 		};
 
-		void Initialize()
+		inline void Initialize()
 		{
 			IL2CPP::SystemTypeCache::Initializer::Add(UNITY_GAMEOBJECT_CLASS);
 
@@ -144,17 +144,17 @@ namespace Unity
 			m_GameObjectFunctions.m_SetLayer				= IL2CPP::ResolveCall(UNITY_GAMEOBJECT_SETLAYER);
 		}
 
-		CGameObject* CreatePrimitive(m_ePrimitiveType m_Type)
+		inline CGameObject* CreatePrimitive(m_ePrimitiveType m_Type)
 		{
 			return reinterpret_cast<CGameObject*(UNITY_CALLING_CONVENTION)(m_ePrimitiveType)>(m_GameObjectFunctions.m_CreatePrimitive)(m_Type);
 		}
 
-		CGameObject* Find(const char* m_Name)
+		inline CGameObject* Find(const char* m_Name)
 		{
 			return reinterpret_cast<CGameObject*(UNITY_CALLING_CONVENTION)(System_String*)>(m_GameObjectFunctions.m_Find)(IL2CPP::String::New(m_Name));
 		}
 
-		il2cppArray<CGameObject*>* FindWithTag(const char* m_Tag)
+		inline il2cppArray<CGameObject*>* FindWithTag(const char* m_Tag)
 		{
 			return reinterpret_cast<il2cppArray<CGameObject*>*(UNITY_CALLING_CONVENTION)(void*)>(m_GameObjectFunctions.m_FindGameObjectsWithTag)(IL2CPP::String::New(m_Tag));
 		}

@@ -5,10 +5,6 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
-#include <d3d11.h>
-
-#include "il2cpp.h"
-
 namespace G {
     inline ID3D11Device* g_pd3dDevice = nullptr;
 

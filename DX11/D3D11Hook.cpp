@@ -1,4 +1,4 @@
-#include "D3D11Hook.h"
+#include "pch.h"
 
 typedef HRESULT (__stdcall*Present)(IDXGISwapChain *pSwapChain, UINT SyncInterval, UINT Flags);
 

@@ -7,7 +7,7 @@ namespace Unity
 		void* m_GetGameObject = nullptr;
 		void* m_GetTransform = nullptr;
 	};
-	ComponentFunctions_t m_ComponentFunctions;
+	inline ComponentFunctions_t m_ComponentFunctions;
 
 	class CComponent : public CObject
 	{
@@ -25,7 +25,7 @@ namespace Unity
 
 	namespace Component
 	{
-		void Initialize()
+		inline void Initialize()
 		{
 			IL2CPP::SystemTypeCache::Initializer::Add(UNITY_COMPONENT_CLASS);
 

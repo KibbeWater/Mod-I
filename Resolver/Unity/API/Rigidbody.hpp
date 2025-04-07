@@ -9,7 +9,7 @@ namespace Unity
 		void* m_SetDetectCollisions = nullptr;
 		void* m_SetVelocity = nullptr;
 	};
-	RigidbodyFunctions_t m_RigidbodyFunctions;
+	inline RigidbodyFunctions_t m_RigidbodyFunctions;
 
 	class CRigidbody : public IL2CPP::CClass
 	{
@@ -39,7 +39,7 @@ namespace Unity
 
 	namespace RigidBody
 	{
-		void Initialize()
+		inline void Initialize()
 		{
 			IL2CPP::SystemTypeCache::Initializer::Add(UNITY_RIGIDBODY_CLASS);
 

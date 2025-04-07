@@ -5,13 +5,6 @@
 #ifndef MENU_H
 #define MENU_H
 
-#include <string>
-
-#include <imgui.h>
-
-#include "../Util/Globals.h"
-#include "../Util/game_thread.h"
-
 namespace Menu {
     static inline bool bIsOpen = true;
 

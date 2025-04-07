@@ -88,6 +88,10 @@ add_library(Mod_I SHARED Main.cpp
         pch.h
         framework.h
         GameAPI/GameAPI.h
+        Util/Unity.cpp
+        Util/Unity.h
+        Hooks/TimeManager.cpp
+        Hooks/TimeManager.h
 )
 
 target_include_directories(Mod_I PUBLIC

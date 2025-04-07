@@ -4,7 +4,7 @@ namespace IL2CPP
 {
 	namespace Helper
 	{
-		Unity::CComponent* GetMonoBehaviour()
+		inline Unity::CComponent* GetMonoBehaviour()
 		{
 			Unity::il2cppArray<Unity::CGameObject*>* m_Objects = Unity::Object::FindObjectsOfType<Unity::CGameObject>(UNITY_GAMEOBJECT_CLASS);
 			for (uintptr_t u = 0U; m_Objects->m_uMaxLength > u; ++u)

@@ -1,14 +1,20 @@
 #include "pch.h"
 
+void Update() {
+    game_thread::_processQueue();
+}
+
 DWORD WINAPI OnDllAttach(LPVOID lpParameter) {
     HWND mainWin = FindWindowW(
         L"UnityWndClass",
         L"Schedule I"
     );
 
-    if (game_thread::init()) {
-        std::cout << "[+] Game thread found! ID = " << game_thread::get_thread_id() << std::endl;
-    }
+    IL2CPP::Initialize();
+    IL2CPP::Callback::Initialize();
+    IL2CPP::Callback::OnUpdate::Add((void*)Update);
+
+    UnityHelpers::Initialize();
 
     ImplHookDX11_Init(mainWin);
 

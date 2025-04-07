@@ -4,12 +4,12 @@ namespace IL2CPP
 {
 	namespace Thread
 	{
-		void* Attach(void* m_Domain)
+		inline void* Attach(void* m_Domain)
 		{
 			return reinterpret_cast<void* (IL2CPP_CALLING_CONVENTION)(void*)>(Functions.m_ThreadAttach)(m_Domain);
 		}
 
-		void Detach(void* m_Thread)
+		inline void Detach(void* m_Thread)
 		{
 			reinterpret_cast<void(IL2CPP_CALLING_CONVENTION)(void*)>(Functions.m_ThreadDetach)(m_Thread);
 		}
@@ -59,7 +59,7 @@ namespace IL2CPP
 
 	namespace Thread
 	{
-		void Create(void* m_OnStartFunc, void* m_OnEndFunc = nullptr)
+		inline void Create(void* m_OnStartFunc, void* m_OnEndFunc = nullptr)
 		{
 			CThread* m_Thread = new CThread(m_OnStartFunc, m_OnEndFunc);
 			IL2CPP_ASSERT(m_Thread && "IL2CPP::Thread::Create - Failed!");

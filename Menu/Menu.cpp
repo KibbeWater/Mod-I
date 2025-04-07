@@ -2,9 +2,7 @@
 // Created by kibbe on 4/3/2025.
 //
 
-#include "Menu.h"
-
-#include "../GameAPI/GameAPI.h"
+#include "pch.h"
 
 void Menu::Render() {
     ImGui::GetIO().MouseDrawCursor = Menu::bIsOpen;
@@ -23,7 +21,9 @@ void Menu::Render() {
 
         if (G::m_iMoneyManager != nullptr && ImGui::CollapsingHeader("Money Manager")) {
             if (ImGui::Button("Add 10k")) {
-                GameAPI::MoneyManager::ChangeBalance(10000);
+                game_thread::execute([]() {
+                    GameAPI::MoneyManager::ChangeBalance(10000);
+                });
             }
         }
 

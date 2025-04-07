@@ -8,7 +8,7 @@ namespace Unity
 		void* m_FindObjectsOfType = nullptr;
 		void* m_GetName = nullptr;
 	};
-	ObjectFunctions_t m_ObjectFunctions;
+	inline ObjectFunctions_t m_ObjectFunctions;
 
 	class CObject : public IL2CPP::CClass
 	{
@@ -26,7 +26,7 @@ namespace Unity
 
 	namespace Object
 	{
-		void Initialize()
+		inline void Initialize()
 		{
 			IL2CPP::SystemTypeCache::Initializer::Add(UNITY_OBJECT_CLASS);
 
@@ -35,7 +35,7 @@ namespace Unity
 			m_ObjectFunctions.m_GetName				= IL2CPP::ResolveCall(UNITY_OBJECT_GETNAME);
 		}
 
-		static il2cppObject* New(il2cppClass* m_pClass)
+		inline static il2cppObject* New(il2cppClass* m_pClass)
 		{
 			return reinterpret_cast<Unity::il2cppObject*(UNITY_CALLING_CONVENTION)(void*)>(IL2CPP::Functions.m_pObjectNew)(m_pClass);
 		}
@@ -73,4 +73,4 @@ namespace Unity
 			return FindObjectOfType<T>(IL2CPP::Class::GetSystemType(m_pClass), m_bIncludeInactive);
 		}
 	}
-} 
+}

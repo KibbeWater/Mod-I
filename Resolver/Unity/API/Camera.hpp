@@ -12,7 +12,7 @@ namespace Unity
 		void* m_SetFieldOfView = nullptr;
 		void* m_WorldToScreen = nullptr;
 	};
-	CameraFunctions_t m_CameraFunctions;
+	inline CameraFunctions_t m_CameraFunctions;
 
 	class CCamera : public CGameObject
 	{
@@ -45,7 +45,7 @@ namespace Unity
 
 	namespace Camera
 	{
-		void Initialize()
+		inline void Initialize()
 		{
 			IL2CPP::SystemTypeCache::Initializer::Add(UNITY_CAMERA_CLASS);
 
@@ -58,12 +58,12 @@ namespace Unity
 			m_CameraFunctions.m_WorldToScreen	= IL2CPP::ResolveCall(UNITY_CAMERA_WORLDTOSCREEN);
 		}
 
-		CCamera* GetCurrent()
+		inline CCamera* GetCurrent()
 		{
 			return reinterpret_cast<CCamera*(UNITY_CALLING_CONVENTION)()>(m_CameraFunctions.m_GetCurrent)();
 		}
 
-		CCamera* GetMain()
+		inline CCamera* GetMain()
 		{
 			return reinterpret_cast<CCamera*(UNITY_CALLING_CONVENTION)()>(m_CameraFunctions.m_GetMain)();
 		}

@@ -5,8 +5,6 @@
 #ifndef MEMORY_H
 #define MEMORY_H
 
-#include <windows.h>
-
 namespace MEM
 {
     PVOID PatternScan(PVOID pModule, const char* szPattern, int iOffset = 0); // Pattern scanner to scan 1 module

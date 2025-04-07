@@ -18,7 +18,7 @@ namespace Unity
 		void* m_SetLocalPosition = nullptr;
 		void* m_SetLocalScale = nullptr;
 	};
-	TransformFunctions_t m_TransformFunctions;
+	inline TransformFunctions_t m_TransformFunctions;
 
 	class CTransform : public IL2CPP::CClass
 	{
@@ -108,7 +108,7 @@ namespace Unity
 
 	namespace Transform
 	{
-		void Initialize()
+		inline void Initialize()
 		{
 			IL2CPP::SystemTypeCache::Initializer::Add(UNITY_TRANSFORM_CLASS);
 

@@ -5,11 +5,6 @@
 #ifndef IL2CPP_H
 #define IL2CPP_H
 
-#include <cstdint>
-#include <cstring>
-#include <string>
-#include <winnls.h>
-
 typedef void(*Il2CppMethodPointer)();
 
 struct MethodInfo;
@@ -382,6 +377,139 @@ struct ScheduleOne_Money_MoneyManager_o {
 	ScheduleOne_Money_MoneyManager_c *klass;
 	void *monitor;
 	ScheduleOne_Money_MoneyManager_Fields fields;
+};
+
+struct ScheduleOne_GameTime_GameDateTime_Fields {
+	int32_t elapsedDays;
+	int32_t time;
+};
+struct ScheduleOne_GameTime_GameDateTime_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+};
+struct ScheduleOne_GameTime_GameDateTime_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_GameTime_GameDateTime_VTable vtable;
+};
+struct ScheduleOne_GameTime_GameDateTime_o {
+	ScheduleOne_GameTime_GameDateTime_Fields fields;
+};
+
+struct ScheduleOne_DevUtilities_NetworkSingleton_TimeManager__Fields : FishNet_Object_NetworkBehaviour_Fields {
+	bool Destroyed;
+	bool NetworkInitialize___EarlyScheduleOne_DevUtilities_NetworkSingleton_1Assembly_CSharp_dll_Excuted;
+	bool NetworkInitialize__LateScheduleOne_DevUtilities_NetworkSingleton_1Assembly_CSharp_dll_Excuted;
+};
+struct ScheduleOne_GameTime_TimeManager_Fields : ScheduleOne_DevUtilities_NetworkSingleton_TimeManager__Fields {
+	bool _SleepInProgress_k__BackingField;
+	int32_t _ElapsedDays_k__BackingField;
+	int32_t _CurrentTime_k__BackingField;
+	float _TimeOnCurrentMinute_k__BackingField;
+	int32_t DefaultTime;
+	int32_t DefaultDay;
+	float TimeProgressionMultiplier;
+	int32_t _DailyMinTotal_k__BackingField;
+	float _Playtime_k__BackingField;
+	int32_t savedTime;
+	bool _TimeOverridden_k__BackingField;
+	struct System_Action_o* onMinutePass;
+	struct System_Action_o* onHourPass;
+	struct System_Action_o* onDayPass;
+	struct System_Action_o* onWeekPass;
+	struct System_Action_o* onUpdate;
+	struct System_Action_o* onFixedUpdate;
+	struct System_Action_int__o* onTimeSkip;
+	struct System_Action_o* onTick;
+	struct UnityEngine_Events_UnityEvent_o* _onSleepStart;
+	struct UnityEngine_Events_UnityEvent_o* _onSleepEnd;
+	struct UnityEngine_Events_UnityEvent_o* onFirstNight;
+	struct System_Action_o* onTimeChanged;
+	struct ScheduleOne_GameTime_GameDateTime_o sleepStartTime;
+	int32_t sleepEndTime;
+	bool _HostDailySummaryDone_k__BackingField;
+	float defaultFixedTimeScale;
+	struct ScheduleOne_Persistence_Loaders_TimeLoader_o* loader;
+	struct System_Collections_Generic_List_string__o* _LocalExtraFiles_k__BackingField;
+	struct System_Collections_Generic_List_string__o* _LocalExtraFolders_k__BackingField;
+	bool _HasChanged_k__BackingField;
+	bool NetworkInitialize___EarlyScheduleOne_GameTime_TimeManagerAssembly_CSharp_dll_Excuted;
+	bool NetworkInitialize__LateScheduleOne_GameTime_TimeManagerAssembly_CSharp_dll_Excuted;
+};
+struct ScheduleOne_GameTime_TimeManager_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_OnStartNetwork;
+	VirtualInvokeData _5_OnStopNetwork;
+	VirtualInvokeData _6_OnStartServer;
+	VirtualInvokeData _7_OnStopServer;
+	VirtualInvokeData _8_OnOwnershipServer;
+	VirtualInvokeData _9_OnSpawnServer;
+	VirtualInvokeData _10_OnDespawnServer;
+	VirtualInvokeData _11_OnStartClient;
+	VirtualInvokeData _12_Save;
+	VirtualInvokeData _13_WriteBaseData;
+	VirtualInvokeData _14_GetLocalPath;
+	VirtualInvokeData _15_CompleteSave;
+	VirtualInvokeData _16_WriteData;
+	VirtualInvokeData _17_DeleteUnapprovedFiles;
+	VirtualInvokeData _18_GetContainerFolder;
+	VirtualInvokeData _19_WriteSubfile;
+	VirtualInvokeData _20_WriteFolder;
+	VirtualInvokeData _21_TryLoadFile;
+	VirtualInvokeData _22_TryLoadFile;
+	VirtualInvokeData _23_NetworkInitialize__Late;
+	VirtualInvokeData _24_Awake_UserLogic_ScheduleOne_DevUtilities_NetworkSingleton_1_Assembly_CSharp_dll;
+	VirtualInvokeData _25_get_SaveFolderName;
+	VirtualInvokeData _26_get_SaveFileName;
+	VirtualInvokeData _27_get_Loader;
+	VirtualInvokeData _28_get_ShouldSaveUnderFolder;
+	VirtualInvokeData _29_get_LocalExtraFiles;
+	VirtualInvokeData _30_set_LocalExtraFiles;
+	VirtualInvokeData _31_get_LocalExtraFolders;
+	VirtualInvokeData _32_set_LocalExtraFolders;
+	VirtualInvokeData _33_get_HasChanged;
+	VirtualInvokeData _34_set_HasChanged;
+	VirtualInvokeData _35_unknown;
+	VirtualInvokeData _36_unknown;
+	VirtualInvokeData _37_unknown;
+	VirtualInvokeData _38_unknown;
+	VirtualInvokeData _39_unknown;
+	VirtualInvokeData _40_unknown;
+	VirtualInvokeData _41_unknown;
+	VirtualInvokeData _42_unknown;
+	VirtualInvokeData _43_unknown;
+	VirtualInvokeData _44_unknown;
+	VirtualInvokeData _45_unknown;
+	VirtualInvokeData _46_unknown;
+	VirtualInvokeData _47_unknown;
+	VirtualInvokeData _48_InitializeSaveable;
+	VirtualInvokeData _49_Update;
+	VirtualInvokeData _50_FixedUpdate;
+	VirtualInvokeData _51_GetSaveString;
+	VirtualInvokeData _52_Awake_UserLogic_ScheduleOne_GameTime_TimeManager_Assembly_CSharp_dll;
+};
+struct ScheduleOne_GameTime_TimeManager_c {
+	Il2CppClass_1 _1;
+	struct ScheduleOne_GameTime_TimeManager_StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_GameTime_TimeManager_VTable vtable;
+};
+struct ScheduleOne_GameTime_TimeManager_o {
+	ScheduleOne_GameTime_TimeManager_c *klass;
+	void *monitor;
+	ScheduleOne_GameTime_TimeManager_Fields fields;
+};
+struct ScheduleOne_GameTime_TimeManager_StaticFields {
+	struct System_Action_o* onSleepStart;
+	struct System_Action_int__o* onSleepEnd;
 };
 
 #endif //IL2CPP_H
