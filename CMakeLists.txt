@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.30)
 project(Mod_I)
 
 set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libgcc -static-libstdc++")
+add_link_options(-static -static-libgcc -static-libstdc++)
 
 # Fetch MinHook dependency
 include(FetchContent)
