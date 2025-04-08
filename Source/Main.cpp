@@ -29,11 +29,11 @@ DWORD WINAPI OnDllAttach(LPVOID lpParameter) {
 BOOL APIENTRY DllMain(HMODULE hModule,
                       DWORD ul_reason_for_call,
                       LPVOID lpReserved) {
-    AllocConsole();
-    freopen("CONOUT$", "w", stdout);
-
     switch (ul_reason_for_call) {
         case DLL_PROCESS_ATTACH:
+            AllocConsole();
+            freopen("CONOUT$", "w", stdout);
+
             ::DisableThreadLibraryCalls(hModule);
             ::CreateThread(nullptr, 0, OnDllAttach, hModule, 0, nullptr);
             break;
