@@ -4,7 +4,7 @@
 
 #include "pch.h"
 
-void __fastcall Hook::TimeManager::hkUpdate(ScheduleOne_GameTime_TimeManager_o *pThis) {
+void Hook::TimeManager::hkUpdate(ScheduleOne_GameTime_TimeManager_o *pThis) {
     static auto oUpdate = reinterpret_cast<decltype(&hkUpdate)>(pUpdate);
 
     G::m_iGameTimeManager = pThis;

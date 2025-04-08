@@ -22,6 +22,7 @@
 
 // ImGUI
 #include <imgui.h>
+#include <imgui_stdlib.h>
 #include <imgui_impl_dx11.h>
 #include <imgui_impl_win32.h>
 
@@ -39,6 +40,9 @@
 #include "DX11/D3D11Hook.h"
 
 // Hooks
+#include "Hooks/BlackjackInterface.h"
+#include "Hooks/PursuitBehaviour.h"
+#include "Hooks/PlayerInventory.h"
 #include "Hooks/MoneyManager.h"
 #include "Hooks/TimeManager.h"
 #include "Hooks/Player.h"

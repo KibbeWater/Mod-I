@@ -57,6 +57,7 @@ add_library(imgui STATIC ${IMGUI_SOURCES})
 target_include_directories(imgui PUBLIC
         ${imgui_SOURCE_DIR}
         ${imgui_SOURCE_DIR}/backends
+        ${imgui_SOURCE_DIR}/misc/cpp
         ${imgui_SOURCE_DIR}/misc/freetype
 )
 
@@ -102,6 +103,18 @@ add_library(Mod_I SHARED Main.cpp
         GameAPI/NetworkManager/NetworkManager.h
         GameAPI/Player/Player.cpp
         GameAPI/Player/Player.h
+        Hooks/PursuitBehaviour.cpp
+        Hooks/PursuitBehaviour.h
+        Hooks/BlackjackInterface.cpp
+        Hooks/BlackjackInterface.h
+        GameAPI/Customer/Customer.cpp
+        GameAPI/Customer/Customer.h
+        GameAPI/PlayerInventory/PlayerInventory.cpp
+        GameAPI/PlayerInventory/PlayerInventory.h
+        GameAPI/CashInstance/CashInstance.cpp
+        GameAPI/CashInstance/CashInstance.h
+        Hooks/PlayerInventory.cpp
+        Hooks/PlayerInventory.h
 )
 
 target_include_directories(Mod_I PUBLIC

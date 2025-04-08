@@ -245,6 +245,54 @@ struct UnityEngine_Vector3_StaticFields {
 	struct UnityEngine_Vector3_o negativeInfinityVector;
 };
 
+struct UnityEngine_Color_Fields {
+	float r;
+	float g;
+	float b;
+	float a;
+};
+struct UnityEngine_Color_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Equals;
+	VirtualInvokeData _5_ToString;
+};
+struct UnityEngine_Color_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_Color_VTable vtable;
+};
+struct UnityEngine_Color_o {
+	UnityEngine_Color_Fields fields;
+};
+
+struct UnityEngine_Vector2_Fields {
+	float x;
+	float y;
+};
+struct UnityEngine_Vector2_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Equals;
+	VirtualInvokeData _5_ToString;
+};
+struct UnityEngine_Vector2_c {
+	Il2CppClass_1 _1;
+	struct UnityEngine_Vector2_StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_Vector2_VTable vtable;
+};
+struct UnityEngine_Vector2_o {
+	UnityEngine_Vector2_Fields fields;
+};
+
 struct UnityEngine_Quaternion_Fields {
 	float x;
 	float y;
@@ -1166,6 +1214,851 @@ struct System_Collections_Generic_List_Player__o {
 };
 struct System_Collections_Generic_List_Player__StaticFields {
 	struct ScheduleOne_PlayerScripts_Player_array* s_emptyArray;
+};
+
+struct UnityEngine_DrivenRectTransformTracker_Fields {
+};
+struct UnityEngine_DrivenRectTransformTracker_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+};
+struct UnityEngine_DrivenRectTransformTracker_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_DrivenRectTransformTracker_VTable vtable;
+};
+struct UnityEngine_DrivenRectTransformTracker_o {
+	UnityEngine_DrivenRectTransformTracker_Fields fields;
+};
+
+struct UnityEngine_UI_Navigation_Fields {
+	int32_t m_Mode;
+	bool m_WrapAround;
+	struct UnityEngine_UI_Selectable_o* m_SelectOnUp;
+	struct UnityEngine_UI_Selectable_o* m_SelectOnDown;
+	struct UnityEngine_UI_Selectable_o* m_SelectOnLeft;
+	struct UnityEngine_UI_Selectable_o* m_SelectOnRight;
+};
+struct UnityEngine_UI_Navigation_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Equals;
+};
+struct UnityEngine_UI_Navigation_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_UI_Navigation_VTable vtable;
+};
+struct UnityEngine_UI_Navigation_o {
+	UnityEngine_UI_Navigation_Fields fields;
+};
+
+struct UnityEngine_UI_ColorBlock_Fields {
+	struct UnityEngine_Color_o m_NormalColor;
+	struct UnityEngine_Color_o m_HighlightedColor;
+	struct UnityEngine_Color_o m_PressedColor;
+	struct UnityEngine_Color_o m_SelectedColor;
+	struct UnityEngine_Color_o m_DisabledColor;
+	float m_ColorMultiplier;
+	float m_FadeDuration;
+};
+struct UnityEngine_UI_ColorBlock_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Equals;
+};
+struct UnityEngine_UI_ColorBlock_c {
+	Il2CppClass_1 _1;
+	struct UnityEngine_UI_ColorBlock_StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_UI_ColorBlock_VTable vtable;
+};
+struct UnityEngine_UI_ColorBlock_o {
+	UnityEngine_UI_ColorBlock_Fields fields;
+};
+struct UnityEngine_UI_ColorBlock_StaticFields {
+	struct UnityEngine_UI_ColorBlock_o defaultColorBlock;
+};
+
+struct UnityEngine_UI_SpriteState_Fields {
+	struct UnityEngine_Sprite_o* m_HighlightedSprite;
+	struct UnityEngine_Sprite_o* m_PressedSprite;
+	struct UnityEngine_Sprite_o* m_SelectedSprite;
+	struct UnityEngine_Sprite_o* m_DisabledSprite;
+};
+struct UnityEngine_UI_SpriteState_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Equals;
+};
+struct UnityEngine_UI_SpriteState_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_UI_SpriteState_VTable vtable;
+};
+struct UnityEngine_UI_SpriteState_o {
+	UnityEngine_UI_SpriteState_Fields fields;
+};
+
+struct UnityEngine_EventSystems_UIBehaviour_Fields : UnityEngine_MonoBehaviour_Fields {
+};
+struct UnityEngine_EventSystems_UIBehaviour_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Awake;
+	VirtualInvokeData _5_OnEnable;
+	VirtualInvokeData _6_Start;
+	VirtualInvokeData _7_OnDisable;
+	VirtualInvokeData _8_OnDestroy;
+	VirtualInvokeData _9_IsActive;
+	VirtualInvokeData _10_OnRectTransformDimensionsChange;
+	VirtualInvokeData _11_OnBeforeTransformParentChanged;
+	VirtualInvokeData _12_OnTransformParentChanged;
+	VirtualInvokeData _13_OnDidApplyAnimationProperties;
+	VirtualInvokeData _14_OnCanvasGroupChanged;
+	VirtualInvokeData _15_OnCanvasHierarchyChanged;
+	VirtualInvokeData _16_IsDestroyed;
+};
+struct UnityEngine_EventSystems_UIBehaviour_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_EventSystems_UIBehaviour_VTable vtable;
+};
+struct UnityEngine_EventSystems_UIBehaviour_o {
+	UnityEngine_EventSystems_UIBehaviour_c *klass;
+	void *monitor;
+	UnityEngine_EventSystems_UIBehaviour_Fields fields;
+};
+
+struct UnityEngine_UI_Selectable_Fields : UnityEngine_EventSystems_UIBehaviour_Fields {
+	bool m_EnableCalled;
+	struct UnityEngine_UI_Navigation_o m_Navigation;
+	int32_t m_Transition;
+	struct UnityEngine_UI_ColorBlock_o m_Colors;
+	struct UnityEngine_UI_SpriteState_o m_SpriteState;
+	struct UnityEngine_UI_AnimationTriggers_o* m_AnimationTriggers;
+	bool m_Interactable;
+	struct UnityEngine_UI_Graphic_o* m_TargetGraphic;
+	bool m_GroupsAllowInteraction;
+	int32_t m_CurrentIndex;
+	bool _isPointerInside_k__BackingField;
+	bool _isPointerDown_k__BackingField;
+	bool _hasSelection_k__BackingField;
+	struct System_Collections_Generic_List_CanvasGroup__o* m_CanvasGroupCache;
+};
+struct UnityEngine_UI_Selectable_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Awake;
+	VirtualInvokeData _5_OnEnable;
+	VirtualInvokeData _6_Start;
+	VirtualInvokeData _7_OnDisable;
+	VirtualInvokeData _8_OnDestroy;
+	VirtualInvokeData _9_IsActive;
+	VirtualInvokeData _10_OnRectTransformDimensionsChange;
+	VirtualInvokeData _11_OnBeforeTransformParentChanged;
+	VirtualInvokeData _12_OnTransformParentChanged;
+	VirtualInvokeData _13_OnDidApplyAnimationProperties;
+	VirtualInvokeData _14_OnCanvasGroupChanged;
+	VirtualInvokeData _15_OnCanvasHierarchyChanged;
+	VirtualInvokeData _16_IsDestroyed;
+	VirtualInvokeData _17_unknown;
+	VirtualInvokeData _18_unknown;
+	VirtualInvokeData _19_unknown;
+	VirtualInvokeData _20_unknown;
+	VirtualInvokeData _21_unknown;
+	VirtualInvokeData _22_unknown;
+	VirtualInvokeData _23_unknown;
+	VirtualInvokeData _24_IsInteractable;
+	VirtualInvokeData _25_InstantClearState;
+	VirtualInvokeData _26_DoStateTransition;
+	VirtualInvokeData _27_FindSelectableOnLeft;
+	VirtualInvokeData _28_FindSelectableOnRight;
+	VirtualInvokeData _29_FindSelectableOnUp;
+	VirtualInvokeData _30_FindSelectableOnDown;
+	VirtualInvokeData _31_OnMove;
+	VirtualInvokeData _32_OnPointerDown;
+	VirtualInvokeData _33_OnPointerUp;
+	VirtualInvokeData _34_OnPointerEnter;
+	VirtualInvokeData _35_OnPointerExit;
+	VirtualInvokeData _36_OnSelect;
+	VirtualInvokeData _37_OnDeselect;
+	VirtualInvokeData _38_Select;
+};
+struct UnityEngine_UI_Selectable_c {
+	Il2CppClass_1 _1;
+	struct UnityEngine_UI_Selectable_StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_UI_Selectable_VTable vtable;
+};
+struct UnityEngine_UI_Selectable_o {
+	UnityEngine_UI_Selectable_c *klass;
+	void *monitor;
+	UnityEngine_UI_Selectable_Fields fields;
+};
+struct UnityEngine_UI_Selectable_StaticFields {
+	struct UnityEngine_UI_Selectable_array* s_Selectables;
+	int32_t s_SelectableCount;
+};
+
+struct UnityEngine_UI_Slider_Fields : UnityEngine_UI_Selectable_Fields {
+	struct UnityEngine_RectTransform_o* m_FillRect;
+	struct UnityEngine_RectTransform_o* m_HandleRect;
+	int32_t m_Direction;
+	float m_MinValue;
+	float m_MaxValue;
+	bool m_WholeNumbers;
+	float m_Value;
+	struct UnityEngine_UI_Slider_SliderEvent_o* m_OnValueChanged;
+	struct UnityEngine_UI_Image_o* m_FillImage;
+	struct UnityEngine_Transform_o* m_FillTransform;
+	struct UnityEngine_RectTransform_o* m_FillContainerRect;
+	struct UnityEngine_Transform_o* m_HandleTransform;
+	struct UnityEngine_RectTransform_o* m_HandleContainerRect;
+	struct UnityEngine_Vector2_o m_Offset;
+	struct UnityEngine_DrivenRectTransformTracker_o m_Tracker;
+	bool m_DelayedUpdateVisuals;
+};
+struct UnityEngine_UI_Slider_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Awake;
+	VirtualInvokeData _5_OnEnable;
+	VirtualInvokeData _6_Start;
+	VirtualInvokeData _7_OnDisable;
+	VirtualInvokeData _8_OnDestroy;
+	VirtualInvokeData _9_IsActive;
+	VirtualInvokeData _10_OnRectTransformDimensionsChange;
+	VirtualInvokeData _11_OnBeforeTransformParentChanged;
+	VirtualInvokeData _12_OnTransformParentChanged;
+	VirtualInvokeData _13_OnDidApplyAnimationProperties;
+	VirtualInvokeData _14_OnCanvasGroupChanged;
+	VirtualInvokeData _15_OnCanvasHierarchyChanged;
+	VirtualInvokeData _16_IsDestroyed;
+	VirtualInvokeData _17_unknown;
+	VirtualInvokeData _18_unknown;
+	VirtualInvokeData _19_unknown;
+	VirtualInvokeData _20_unknown;
+	VirtualInvokeData _21_unknown;
+	VirtualInvokeData _22_unknown;
+	VirtualInvokeData _23_unknown;
+	VirtualInvokeData _24_IsInteractable;
+	VirtualInvokeData _25_InstantClearState;
+	VirtualInvokeData _26_DoStateTransition;
+	VirtualInvokeData _27_FindSelectableOnLeft;
+	VirtualInvokeData _28_FindSelectableOnRight;
+	VirtualInvokeData _29_FindSelectableOnUp;
+	VirtualInvokeData _30_FindSelectableOnDown;
+	VirtualInvokeData _31_OnMove;
+	VirtualInvokeData _32_OnPointerDown;
+	VirtualInvokeData _33_OnPointerUp;
+	VirtualInvokeData _34_OnPointerEnter;
+	VirtualInvokeData _35_OnPointerExit;
+	VirtualInvokeData _36_OnSelect;
+	VirtualInvokeData _37_OnDeselect;
+	VirtualInvokeData _38_Select;
+	VirtualInvokeData _39_unknown;
+	VirtualInvokeData _40_unknown;
+	VirtualInvokeData _41_unknown;
+	VirtualInvokeData _42_UnityEngine_UI_ICanvasElement_get_transform;
+	VirtualInvokeData _43_unknown;
+	VirtualInvokeData _44_unknown;
+	VirtualInvokeData _45_unknown;
+	VirtualInvokeData _46_get_value;
+	VirtualInvokeData _47_set_value;
+	VirtualInvokeData _48_SetValueWithoutNotify;
+	VirtualInvokeData _49_Rebuild;
+	VirtualInvokeData _50_LayoutComplete;
+	VirtualInvokeData _51_GraphicUpdateComplete;
+	VirtualInvokeData _52_Update;
+	VirtualInvokeData _53_Set;
+	VirtualInvokeData _54_OnDrag;
+	VirtualInvokeData _55_OnInitializePotentialDrag;
+};
+struct UnityEngine_UI_Slider_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	UnityEngine_UI_Slider_VTable vtable;
+};
+struct UnityEngine_UI_Slider_o {
+	UnityEngine_UI_Slider_c *klass;
+	void *monitor;
+	UnityEngine_UI_Slider_Fields fields;
+};
+
+struct ScheduleOne_DevUtilities_Singleton_BlackjackInterface__Fields : UnityEngine_MonoBehaviour_Fields {
+	bool Destroyed;
+};
+
+struct ScheduleOne_Casino_UI_BlackjackInterface_Fields : ScheduleOne_DevUtilities_Singleton_BlackjackInterface__Fields {
+	struct ScheduleOne_Casino_BlackjackGameController_o* _CurrentGame_k__BackingField;
+	struct UnityEngine_Canvas_o* Canvas;
+	struct ScheduleOne_Casino_UI_CasinoGamePlayerDisplay_o* PlayerDisplay;
+	struct UnityEngine_RectTransform_o* BetContainer;
+	struct TMPro_TextMeshProUGUI_o* BetTitleLabel;
+	struct UnityEngine_UI_Slider_o* BetSlider;
+	struct TMPro_TextMeshProUGUI_o* BetAmount;
+	struct UnityEngine_UI_Button_o* ReadyButton;
+	struct TMPro_TextMeshProUGUI_o* ReadyLabel;
+	struct UnityEngine_RectTransform_o* WaitingContainer;
+	struct TMPro_TextMeshProUGUI_o* WaitingLabel;
+	struct TMPro_TextMeshProUGUI_o* DealerScoreLabel;
+	struct TMPro_TextMeshProUGUI_o* PlayerScoreLabel;
+	struct UnityEngine_UI_Button_o* HitButton;
+	struct UnityEngine_UI_Button_o* StandButton;
+	struct UnityEngine_Animation_o* InputContainerAnimation;
+	struct UnityEngine_CanvasGroup_o* InputContainerCanvasGroup;
+	struct UnityEngine_AnimationClip_o* InputContainerFadeIn;
+	struct UnityEngine_AnimationClip_o* InputContainerFadeOut;
+	struct UnityEngine_RectTransform_o* SelectionIndicator;
+	struct UnityEngine_Animation_o* ScoresContainerAnimation;
+	struct UnityEngine_CanvasGroup_o* ScoresContainerCanvasGroup;
+	struct TMPro_TextMeshProUGUI_o* PositiveOutcomeLabel;
+	struct TMPro_TextMeshProUGUI_o* PayoutLabel;
+	struct UnityEngine_Events_UnityEvent_o* onBust;
+	struct UnityEngine_Events_UnityEvent_o* onBlackjack;
+	struct UnityEngine_Events_UnityEvent_o* onWin;
+	struct UnityEngine_Events_UnityEvent_o* onLose;
+	struct UnityEngine_Events_UnityEvent_o* onPush;
+};
+struct ScheduleOne_Casino_UI_BlackjackInterface_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Start;
+	VirtualInvokeData _5_Awake;
+	VirtualInvokeData _6_OnDestroy;
+};
+struct ScheduleOne_Casino_UI_BlackjackInterface_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_Casino_UI_BlackjackInterface_VTable vtable;
+};
+struct ScheduleOne_Casino_UI_BlackjackInterface_o {
+	ScheduleOne_Casino_UI_BlackjackInterface_c *klass;
+	void *monitor;
+	ScheduleOne_Casino_UI_BlackjackInterface_Fields fields;
+};
+
+struct ScheduleOne_Casino_CasinoGameController_Fields : FishNet_Object_NetworkBehaviour_Fields {
+	bool _IsOpen_k__BackingField;
+	struct ScheduleOne_Casino_CasinoGamePlayers_o* Players;
+	struct ScheduleOne_Casino_CasinoGameInteraction_o* Interaction;
+	struct UnityEngine_Transform_array* DefaultCameraTransforms;
+	struct UnityEngine_Transform_o* localDefaultCameraTransform;
+	bool NetworkInitialize___EarlyScheduleOne_Casino_CasinoGameControllerAssembly_CSharp_dll_Excuted;
+	bool NetworkInitialize__LateScheduleOne_Casino_CasinoGameControllerAssembly_CSharp_dll_Excuted;
+};
+
+struct ScheduleOne_Casino_BlackjackGameController_Fields : ScheduleOne_Casino_CasinoGameController_Fields {
+	int32_t _CurrentStage_k__BackingField;
+	struct ScheduleOne_PlayerScripts_Player_o* _PlayerTurn_k__BackingField;
+	float _LocalPlayerBet_k__BackingField;
+	int32_t _DealerScore_k__BackingField;
+	int32_t _LocalPlayerScore_k__BackingField;
+	bool _IsLocalPlayerBlackjack_k__BackingField;
+	bool _IsLocalPlayerBust_k__BackingField;
+	struct ScheduleOne_Casino_PlayingCard_array* Cards;
+	struct UnityEngine_Transform_array* DefaultCardPositions;
+	struct UnityEngine_Transform_array* FocusedCameraTransforms;
+	struct UnityEngine_Transform_array* FinalCameraTransforms;
+	struct UnityEngine_Transform_array* Player1CardPositions;
+	struct UnityEngine_Transform_array* Player2CardPositions;
+	struct UnityEngine_Transform_array* Player3CardPositions;
+	struct UnityEngine_Transform_array* Player4CardPositions;
+	struct UnityEngine_Transform_array* DealerCardPositions;
+	struct System_Collections_Generic_List_Player__o* playersInCurrentRound;
+	struct System_Collections_Generic_List_PlayingCard__o* playStack;
+	struct System_Collections_Generic_List_PlayingCard__o* player1Hand;
+	struct System_Collections_Generic_List_PlayingCard__o* player2Hand;
+	struct System_Collections_Generic_List_PlayingCard__o* player3Hand;
+	struct System_Collections_Generic_List_PlayingCard__o* player4Hand;
+	struct System_Collections_Generic_List_PlayingCard__o* dealerHand;
+	struct System_Collections_Generic_List_PlayingCard_CardData__o* cardValuesInDeck;
+	struct System_Collections_Generic_List_PlayingCard_CardData__o* drawnCardsValues;
+	struct UnityEngine_Transform_o* localFocusCameraTransform;
+	struct UnityEngine_Transform_o* localFinalCameraTransform;
+	struct System_Action_o* onLocalPlayerBetChange;
+	struct System_Action_o* onLocalPlayerExitRound;
+	struct System_Action_o* onInitialCardsDealt;
+	struct System_Action_o* onLocalPlayerReadyForInput;
+	struct System_Action_o* onLocalPlayerBust;
+	struct System_Action_BlackjackGameController_EPayoutType__o* onLocalPlayerRoundCompleted;
+	bool NetworkInitialize___EarlyScheduleOne_Casino_BlackjackGameControllerAssembly_CSharp_dll_Excuted;
+	bool NetworkInitialize__LateScheduleOne_Casino_BlackjackGameControllerAssembly_CSharp_dll_Excuted;
+};
+struct ScheduleOne_Casino_BlackjackGameController_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_OnStartNetwork;
+	VirtualInvokeData _5_OnStopNetwork;
+	VirtualInvokeData _6_OnStartServer;
+	VirtualInvokeData _7_OnStopServer;
+	VirtualInvokeData _8_OnOwnershipServer;
+	VirtualInvokeData _9_OnSpawnServer;
+	VirtualInvokeData _10_OnDespawnServer;
+	VirtualInvokeData _11_OnStartClient;
+	VirtualInvokeData _12_OnStopClient;
+	VirtualInvokeData _13_OnOwnershipClient;
+	VirtualInvokeData _14_NetworkInitializeIfDisabled;
+	VirtualInvokeData _15_Reset;
+	VirtualInvokeData _16_OnValidate;
+	VirtualInvokeData _17_ClearReplicateCache_Virtual;
+	VirtualInvokeData _18_ResetSyncVarFields;
+	VirtualInvokeData _19_Awake;
+	VirtualInvokeData _20_OnLocalPlayerRequestJoin;
+	VirtualInvokeData _21_Exit;
+	VirtualInvokeData _22_Update;
+	VirtualInvokeData _23_FixedUpdate;
+	VirtualInvokeData _24_Open;
+	VirtualInvokeData _25_Close;
+	VirtualInvokeData _26_NetworkInitialize___Early;
+	VirtualInvokeData _27_NetworkInitialize__Late;
+	VirtualInvokeData _28_Awake_UserLogic_ScheduleOne_Casino_CasinoGameController_Assembly_CSharp_dll;
+	VirtualInvokeData _29_Awake_UserLogic_ScheduleOne_Casino_BlackjackGameController_Assembly_CSharp_dll;
+};
+struct ScheduleOne_Casino_BlackjackGameController_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_Casino_BlackjackGameController_VTable vtable;
+};
+struct ScheduleOne_Casino_BlackjackGameController_o {
+	ScheduleOne_Casino_BlackjackGameController_c *klass;
+	void *monitor;
+	ScheduleOne_Casino_BlackjackGameController_Fields fields;
+};
+
+struct ScheduleOne_Economy_Customer_Fields : FishNet_Object_NetworkBehaviour_Fields {
+	bool DEBUG;
+	float _CurrentAddiction_k__BackingField;
+	struct ScheduleOne_Quests_ContractInfo_o* offeredContractInfo;
+	struct ScheduleOne_GameTime_GameDateTime_o _OfferedContractTime_k__BackingField;
+	struct ScheduleOne_Quests_Contract_o* _CurrentContract_k__BackingField;
+	bool _IsAwaitingDelivery_k__BackingField;
+	int32_t _TimeSinceLastDealCompleted_k__BackingField;
+	int32_t _TimeSinceLastDealOffered_k__BackingField;
+	int32_t _TimeSincePlayerApproached_k__BackingField;
+	int32_t _TimeSinceInstantDealOffered_k__BackingField;
+	int32_t _OfferedDeals_k__BackingField;
+	int32_t _CompletedDeliveries_k__BackingField;
+	bool _HasBeenRecommended_k__BackingField;
+	struct ScheduleOne_NPCs_NPC_o* _NPC_k__BackingField;
+	struct ScheduleOne_Economy_Dealer_o* _AssignedDealer_k__BackingField;
+	struct ScheduleOne_NPCs_Schedules_NPCSignal_WaitForDelivery_o* DealSignal;
+	bool AvailableInDemo;
+	struct ScheduleOne_Economy_CustomerData_o* customerData;
+	struct ScheduleOne_Economy_DeliveryLocation_o* DefaultDeliveryLocation;
+	bool CanRecommendFriends;
+	struct UnityEngine_Events_UnityEvent_o* onUnlocked;
+	struct UnityEngine_Events_UnityEvent_o* onDealCompleted;
+	struct UnityEngine_Events_UnityEvent_Contract__o* onContractAssigned;
+	bool awaitingSample;
+	struct ScheduleOne_Dialogue_DialogueController_DialogueChoice_o* sampleChoice;
+	struct ScheduleOne_Dialogue_DialogueController_DialogueChoice_o* completeContractChoice;
+	struct ScheduleOne_Dialogue_DialogueController_DialogueChoice_o* offerDealChoice;
+	struct ScheduleOne_Dialogue_DialogueController_GreetingOverride_o* awaitingDealGreeting;
+	int32_t minsSinceUnlocked;
+	bool sampleOfferedToday;
+	struct ScheduleOne_Map_NPCPoI_o* _potentialCustomerPoI_k__BackingField;
+	struct ScheduleOne_Economy_CustomerAffinityData_o* currentAffinityData;
+	bool pendingInstantDeal;
+	struct System_Collections_Generic_List_string__o* _LocalExtraFiles_k__BackingField;
+	struct System_Collections_Generic_List_string__o* _LocalExtraFolders_k__BackingField;
+	bool _HasChanged_k__BackingField;
+	struct ScheduleOne_Product_ProductItemInstance_o* consumedSample;
+	struct FishNet_Object_Synchronizing_SyncVar_float__o* syncVar____CurrentAddiction_k__BackingField;
+	struct FishNet_Object_Synchronizing_SyncVar_bool__o* syncVar____HasBeenRecommended_k__BackingField;
+	bool NetworkInitialize___EarlyScheduleOne_Economy_CustomerAssembly_CSharp_dll_Excuted;
+	bool NetworkInitialize__LateScheduleOne_Economy_CustomerAssembly_CSharp_dll_Excuted;
+};
+struct ScheduleOne_Economy_Customer_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_OnStartNetwork;
+	VirtualInvokeData _5_OnStopNetwork;
+	VirtualInvokeData _6_OnStartServer;
+	VirtualInvokeData _7_OnStopServer;
+	VirtualInvokeData _8_OnOwnershipServer;
+	VirtualInvokeData _9_OnSpawnServer;
+	VirtualInvokeData _10_OnDespawnServer;
+	VirtualInvokeData _11_OnStartClient;
+	VirtualInvokeData _12_Save;
+	VirtualInvokeData _13_WriteBaseData;
+	VirtualInvokeData _14_GetLocalPath;
+	VirtualInvokeData _15_CompleteSave;
+	VirtualInvokeData _16_OnValidate;
+	VirtualInvokeData _17_DeleteUnapprovedFiles;
+	VirtualInvokeData _18_GetContainerFolder;
+	VirtualInvokeData _19_WriteSubfile;
+	VirtualInvokeData _20_WriteFolder;
+	VirtualInvokeData _21_TryLoadFile;
+	VirtualInvokeData _22_TryLoadFile;
+	VirtualInvokeData _23_get_LocalExtraFiles;
+	VirtualInvokeData _24_set_LocalExtraFiles;
+	VirtualInvokeData _25_get_LocalExtraFolders;
+	VirtualInvokeData _26_set_LocalExtraFolders;
+	VirtualInvokeData _27_get_HasChanged;
+	VirtualInvokeData _28_set_HasChanged;
+	VirtualInvokeData _29_unknown;
+	VirtualInvokeData _30_unknown;
+	VirtualInvokeData _31_unknown;
+	VirtualInvokeData _32_unknown;
+	VirtualInvokeData _33_unknown;
+	VirtualInvokeData _34_unknown;
+	VirtualInvokeData _35_unknown;
+	VirtualInvokeData _36_unknown;
+	VirtualInvokeData _37_unknown;
+	VirtualInvokeData _38_unknown;
+	VirtualInvokeData _39_unknown;
+	VirtualInvokeData _40_unknown;
+	VirtualInvokeData _41_unknown;
+	VirtualInvokeData _42_Awake;
+	VirtualInvokeData _43_InitializeSaveable;
+	VirtualInvokeData _44_MinPass;
+	VirtualInvokeData _45_DayPass;
+	VirtualInvokeData _46_OnCustomerUnlocked;
+	VirtualInvokeData _47_OfferContract;
+	VirtualInvokeData _48_ExpireOffer;
+	VirtualInvokeData _49_AssignContract;
+	VirtualInvokeData _50_NotifyPlayerOfContract;
+	VirtualInvokeData _51_AcceptContractClicked;
+	VirtualInvokeData _52_CounterOfferClicked;
+	VirtualInvokeData _53_SendCounteroffer;
+	VirtualInvokeData _54_PlayerAcceptedContract;
+	VirtualInvokeData _55_ContractAccepted;
+	VirtualInvokeData _56_PlayContractAcceptedReaction;
+	VirtualInvokeData _57_EvaluateCounteroffer;
+	VirtualInvokeData _58_ContractRejected;
+	VirtualInvokeData _59_PlayContractRejectedReaction;
+	VirtualInvokeData _60_SetIsAwaitingDelivery;
+	VirtualInvokeData _61_ShouldTryGenerateDeal;
+	VirtualInvokeData _62_OfferDealItems;
+	VirtualInvokeData _63_CustomerRejectedDeal;
+	VirtualInvokeData _64_ProcessHandover;
+	VirtualInvokeData _65_CurrentContractEnded;
+	VirtualInvokeData _66_EvaluateDelivery;
+	VirtualInvokeData _67_ShowOfferDealOption;
+	VirtualInvokeData _68_OfferDealValid;
+	VirtualInvokeData _69_InstantDealOffered;
+	VirtualInvokeData _70_ShouldTryApproachPlayer;
+	VirtualInvokeData _71_GetSaveString;
+	VirtualInvokeData _72_WriteData;
+	VirtualInvokeData _73_Load;
+	VirtualInvokeData _74_IsReadyForHandover;
+	VirtualInvokeData _75_IsHandoverChoiceValid;
+	VirtualInvokeData _76_ShowDirectApproachOption;
+	VirtualInvokeData _77_IsUnlockable;
+	VirtualInvokeData _78_SampleOptionValid;
+	VirtualInvokeData _79_GetSampleRequestSuccessChance;
+	VirtualInvokeData _80_SampleAccepted;
+	VirtualInvokeData _81_DirectApproachRejected;
+	VirtualInvokeData _82_NetworkInitialize___Early;
+	VirtualInvokeData _83_NetworkInitialize__Late;
+	VirtualInvokeData _84_RpcLogic___ExpireOffer_2166136261;
+	VirtualInvokeData _85_ReadSyncVar___ScheduleOne_Economy_Customer;
+	VirtualInvokeData _86_Awake_UserLogic_ScheduleOne_Economy_Customer_Assembly_CSharp_dll;
+};
+struct ScheduleOne_Economy_Customer_c {
+	Il2CppClass_1 _1;
+	struct ScheduleOne_Economy_Customer_StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_Economy_Customer_VTable vtable;
+};
+struct ScheduleOne_Economy_Customer_o {
+	ScheduleOne_Economy_Customer_c *klass;
+	void *monitor;
+	ScheduleOne_Economy_Customer_Fields fields;
+};
+struct ScheduleOne_Economy_Customer_StaticFields {
+	struct System_Action_Customer__o* onCustomerUnlocked;
+	struct System_Collections_Generic_List_Customer__o* UnlockedCustomers;
+	struct System_String_array* PlayerAcceptMessages;
+	struct System_String_array* PlayerRejectMessages;
+};
+
+struct ScheduleOne_Economy_Customer_array {
+	Il2CppObject obj;
+	Il2CppArrayBounds *bounds;
+	il2cpp_array_size_t max_length;
+	ScheduleOne_Economy_Customer_o* m_Items[65535];
+};
+
+struct System_Collections_Generic_List_Customer__Fields {
+	struct ScheduleOne_Economy_Customer_array* _items;
+	int32_t _size;
+	int32_t _version;
+	Il2CppObject* _syncRoot;
+};
+struct System_Collections_Generic_List_Customer__VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_unknown;
+	VirtualInvokeData _5_set_Item;
+	VirtualInvokeData _6_IndexOf;
+	VirtualInvokeData _7_Insert;
+	VirtualInvokeData _8_unknown;
+	VirtualInvokeData _9_unknown;
+	VirtualInvokeData _10_System_Collections_Generic_ICollection_T__get_IsReadOnly;
+	VirtualInvokeData _11_Add;
+	VirtualInvokeData _12_unknown;
+	VirtualInvokeData _13_Contains;
+	VirtualInvokeData _14_CopyTo;
+	VirtualInvokeData _15_Remove;
+	VirtualInvokeData _16_System_Collections_Generic_IEnumerable_T__GetEnumerator;
+	VirtualInvokeData _17_System_Collections_IEnumerable_GetEnumerator;
+	VirtualInvokeData _18_System_Collections_IList_get_Item;
+	VirtualInvokeData _19_System_Collections_IList_set_Item;
+	VirtualInvokeData _20_System_Collections_IList_Add;
+	VirtualInvokeData _21_System_Collections_IList_Contains;
+	VirtualInvokeData _22_Clear;
+	VirtualInvokeData _23_System_Collections_IList_get_IsReadOnly;
+	VirtualInvokeData _24_System_Collections_IList_get_IsFixedSize;
+	VirtualInvokeData _25_System_Collections_IList_IndexOf;
+	VirtualInvokeData _26_System_Collections_IList_Insert;
+	VirtualInvokeData _27_System_Collections_IList_Remove;
+	VirtualInvokeData _28_RemoveAt;
+	VirtualInvokeData _29_System_Collections_ICollection_CopyTo;
+	VirtualInvokeData _30_unknown;
+	VirtualInvokeData _31_System_Collections_ICollection_get_SyncRoot;
+	VirtualInvokeData _32_System_Collections_ICollection_get_IsSynchronized;
+	VirtualInvokeData _33_get_Item;
+	VirtualInvokeData _34_get_Count;
+};
+struct System_Collections_Generic_List_Customer__c {
+	Il2CppClass_1 _1;
+	struct System_Collections_Generic_List_Customer__StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	System_Collections_Generic_List_Customer__VTable vtable;
+};
+struct System_Collections_Generic_List_Customer__o {
+	System_Collections_Generic_List_Customer__c *klass;
+	void *monitor;
+	System_Collections_Generic_List_Customer__Fields fields;
+};
+struct System_Collections_Generic_List_Customer__StaticFields {
+	struct ScheduleOne_Economy_Customer_array* s_emptyArray;
+};
+
+struct ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__Fields : UnityEngine_MonoBehaviour_Fields {
+};
+struct ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Awake;
+	VirtualInvokeData _5_Start;
+	VirtualInvokeData _6_OnStartClient;
+	VirtualInvokeData _7_OnDestroy;
+};
+struct ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__c {
+	Il2CppClass_1 _1;
+	struct ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__StaticFields* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__VTable vtable;
+};
+struct ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__o {
+	ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__c *klass;
+	void *monitor;
+	ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__Fields fields;
+};
+struct ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__StaticFields {
+	struct ScheduleOne_PlayerScripts_PlayerInventory_o* instance;
+};
+
+struct ScheduleOne_PlayerScripts_PlayerInventory_Fields : ScheduleOne_DevUtilities_PlayerSingleton_PlayerInventory__Fields {
+	bool giveStartupItems;
+	struct System_Collections_Generic_List_PlayerInventory_ItemAmount__o* startupItems;
+	struct UnityEngine_Transform_o* equipContainer;
+	struct System_Collections_Generic_List_HotbarSlot__o* hotbarSlots;
+	struct ScheduleOne_Money_CashSlot_o* _cashSlot_k__BackingField;
+	struct ScheduleOne_ItemFramework_CashInstance_o* _cashInstance_k__BackingField;
+	struct ScheduleOne_ItemFramework_ClipboardSlot_o* clipboardSlot;
+	struct System_Collections_Generic_List_ItemSlotUI__o* slotUIs;
+	struct ScheduleOne_ItemFramework_ItemSlot_o* discardSlot;
+	struct System_Collections_Generic_List_PlayerInventory_ItemVariable__o* ItemVariables;
+	int32_t _EquippedSlotIndex_k__BackingField;
+	bool _HotbarEnabled_k__BackingField;
+	bool _EquippingEnabled_k__BackingField;
+	struct ScheduleOne_Equipping_Equippable_o* _equippable_k__BackingField;
+	struct System_Action_bool__o* onInventoryStateChanged;
+	int32_t PriorEquippedSlotIndex;
+	int32_t PreviousEquippedSlotIndex;
+	struct UnityEngine_Events_UnityEvent_o* onPreItemEquipped;
+	struct UnityEngine_Events_UnityEvent_o* onItemEquipped;
+	bool ManagementSlotEnabled;
+	float currentEquipTime;
+	float currentDiscardTime;
+};
+struct ScheduleOne_PlayerScripts_PlayerInventory_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Awake;
+	VirtualInvokeData _5_Start;
+	VirtualInvokeData _6_OnStartClient;
+	VirtualInvokeData _7_OnDestroy;
+	VirtualInvokeData _8_Update;
+};
+struct ScheduleOne_PlayerScripts_PlayerInventory_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_PlayerScripts_PlayerInventory_VTable vtable;
+};
+struct ScheduleOne_PlayerScripts_PlayerInventory_o {
+	ScheduleOne_PlayerScripts_PlayerInventory_c *klass;
+	void *monitor;
+	ScheduleOne_PlayerScripts_PlayerInventory_Fields fields;
+};
+
+struct ScheduleOne_ItemFramework_ItemInstance_Fields {
+	struct ScheduleOne_ItemFramework_ItemDefinition_o* definition;
+	struct System_String_o* ID;
+	int32_t Quantity;
+	struct System_Action_o* onDataChanged;
+	struct System_Action_o* requestClearSlot;
+};
+struct ScheduleOne_ItemFramework_ItemInstance_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_get_Name;
+	VirtualInvokeData _5_get_Description;
+	VirtualInvokeData _6_get_Icon;
+	VirtualInvokeData _7_get_Category;
+	VirtualInvokeData _8_get_StackLimit;
+	VirtualInvokeData _9_get_LabelDisplayColor;
+	VirtualInvokeData _10_get_Equippable;
+	VirtualInvokeData _11_CanStackWith;
+	VirtualInvokeData _12_GetCopy;
+	VirtualInvokeData _13_IsValidInstance;
+	VirtualInvokeData _14_GetItemData;
+	VirtualInvokeData _15_GetMonetaryValue;
+};
+struct ScheduleOne_ItemFramework_ItemInstance_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_ItemFramework_ItemInstance_VTable vtable;
+};
+struct ScheduleOne_ItemFramework_ItemInstance_o {
+	ScheduleOne_ItemFramework_ItemInstance_c *klass;
+	void *monitor;
+	ScheduleOne_ItemFramework_ItemInstance_Fields fields;
+};
+
+struct ScheduleOne_Storage_StorableItemInstance_Fields : ScheduleOne_ItemFramework_ItemInstance_Fields {
+};
+struct ScheduleOne_Storage_StorableItemInstance_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_get_Name;
+	VirtualInvokeData _5_get_Description;
+	VirtualInvokeData _6_get_Icon;
+	VirtualInvokeData _7_get_Category;
+	VirtualInvokeData _8_get_StackLimit;
+	VirtualInvokeData _9_get_LabelDisplayColor;
+	VirtualInvokeData _10_get_Equippable;
+	VirtualInvokeData _11_CanStackWith;
+	VirtualInvokeData _12_GetCopy;
+	VirtualInvokeData _13_IsValidInstance;
+	VirtualInvokeData _14_GetItemData;
+	VirtualInvokeData _15_GetMonetaryValue;
+	VirtualInvokeData _16_get_StoredItem;
+};
+struct ScheduleOne_Storage_StorableItemInstance_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_Storage_StorableItemInstance_VTable vtable;
+};
+struct ScheduleOne_Storage_StorableItemInstance_o {
+	ScheduleOne_Storage_StorableItemInstance_c *klass;
+	void *monitor;
+	ScheduleOne_Storage_StorableItemInstance_Fields fields;
+};
+
+struct ScheduleOne_ItemFramework_CashInstance_Fields : ScheduleOne_Storage_StorableItemInstance_Fields {
+	float _Balance_k__BackingField;
+};
+struct ScheduleOne_ItemFramework_CashInstance_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_get_Name;
+	VirtualInvokeData _5_get_Description;
+	VirtualInvokeData _6_get_Icon;
+	VirtualInvokeData _7_get_Category;
+	VirtualInvokeData _8_get_StackLimit;
+	VirtualInvokeData _9_get_LabelDisplayColor;
+	VirtualInvokeData _10_get_Equippable;
+	VirtualInvokeData _11_CanStackWith;
+	VirtualInvokeData _12_GetCopy;
+	VirtualInvokeData _13_IsValidInstance;
+	VirtualInvokeData _14_GetItemData;
+	VirtualInvokeData _15_GetMonetaryValue;
+	VirtualInvokeData _16_get_StoredItem;
+};
+struct ScheduleOne_ItemFramework_CashInstance_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_ItemFramework_CashInstance_VTable vtable;
+};
+struct ScheduleOne_ItemFramework_CashInstance_o {
+	ScheduleOne_ItemFramework_CashInstance_c *klass;
+	void *monitor;
+	ScheduleOne_ItemFramework_CashInstance_Fields fields;
 };
 
 #endif //IL2CPP_H

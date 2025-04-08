@@ -10,7 +10,10 @@ namespace Hook
     namespace MoneyManager
     {
         inline void* pCreateOnlineTransaction;
-        bool __fastcall hkCreateOnlineTransaction(ScheduleOne_Money_MoneyManager_o* pThis, System_String transactionName, float amount, float quantity, System_String transactionNote);
+        bool hkCreateOnlineTransaction(ScheduleOne_Money_MoneyManager_o* pThis, System_String* transactionName, float amount, float quantity, System_String* transactionNote);
+
+        inline void* pUpdate;
+        void hkUpdate(ScheduleOne_Money_MoneyManager_o* pThis);
     }
 }
 

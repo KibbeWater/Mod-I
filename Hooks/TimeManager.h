@@ -10,7 +10,7 @@ namespace Hook
     namespace TimeManager
     {
         inline void* pUpdate;
-        void __fastcall hkUpdate(ScheduleOne_GameTime_TimeManager_o* pThis);
+        void hkUpdate(ScheduleOne_GameTime_TimeManager_o* pThis);
     }
 }
 

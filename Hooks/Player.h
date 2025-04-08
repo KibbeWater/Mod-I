@@ -10,7 +10,7 @@ namespace Hook
     namespace Player
     {
         inline void* pAreAllPlayersReadyToSleep;
-        bool __fastcall hkAreAllPlayersReadyToSleep();
+        bool hkAreAllPlayersReadyToSleep();
     }
 }
 

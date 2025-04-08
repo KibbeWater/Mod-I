@@ -5,15 +5,25 @@
 #include "pch.h"
 
 bool Hook::Init() {
-    if (MH_CreateHook(UnityHelpers::FindMethod("CreateOnlineTransaction")->m_pMethodPointer,
-                      (LPVOID) &MoneyManager::hkCreateOnlineTransaction,
-                      &MoneyManager::pCreateOnlineTransaction) != MH_OK) { return false; }
-    if (MH_CreateHook(UnityHelpers::FindMethodByClass("Update", "TimeManager")->m_pMethodPointer,
-                      (LPVOID) &TimeManager::hkUpdate, &TimeManager::pUpdate) != MH_OK) { return false; }
-    if (MH_CreateHook(UnityHelpers::FindMethod("AreAllPlayersReadyToSleep")->m_pMethodPointer,
-                      (LPVOID) &Player::hkAreAllPlayersReadyToSleep, &Player::pAreAllPlayersReadyToSleep) != MH_OK) {
-        return false;
-    }
+    CREATE_HOOK(UnityHelpers::FindMethod("CreateOnlineTransaction"),
+        MoneyManager::pCreateOnlineTransaction, MoneyManager::hkCreateOnlineTransaction);
+    CREATE_HOOK(UnityHelpers::FindMethodByClass("Update", "MoneyManager"),
+        MoneyManager::pUpdate, MoneyManager::hkUpdate);
+
+    CREATE_HOOK(UnityHelpers::FindMethodByClass("Update", "TimeManager"),
+        TimeManager::pUpdate, TimeManager::hkUpdate);
+
+    CREATE_HOOK(UnityHelpers::FindMethodByClass("Update", "PlayerInventory"),
+        PlayerInventory::pUpdate, PlayerInventory::hkUpdate);
+
+    CREATE_HOOK(UnityHelpers::FindMethod("AreAllPlayersReadyToSleep"),
+        Player::pAreAllPlayersReadyToSleep, Player::hkAreAllPlayersReadyToSleep);
+
+    CREATE_HOOK(UnityHelpers::FindMethodByClass("CanShoot", "PursuitBehaviour"),
+        PursuitBehaviour::pCanShoot, PursuitBehaviour::hkCanShoot);
+
+    CREATE_HOOK(UnityHelpers::FindMethodByClass("GetBetFromSliderValue", "BlackjackInterface"),
+        BlackjackInterface::pGetBetFromSliderValue, BlackjackInterface::hkGetBetFromSliderValue);
 
     MH_EnableHook(MH_ALL_HOOKS);
 

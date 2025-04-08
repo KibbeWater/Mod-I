@@ -18,13 +18,30 @@ void Menu::Render() {
             ImGui::Text("Active Subsystems:");
             ImGui::Text((G::m_iMoneyManager != nullptr) ? "Money Manager: Enabled" : "Money Manager: Inactive");
             ImGui::Text((G::m_iGameTimeManager != nullptr) ? "Game Time: Enabled" : "Game Time: Inactive");
+            ImGui::Text((G::m_iPlayerInventory != nullptr) ? "Player Inventory: Enabled" : "Player Inventory: Inactive");
         }
 
         if (G::m_iMoneyManager != nullptr && ImGui::CollapsingHeader("Money Manager")) {
-            if (ImGui::Button("Add 10k")) {
-                game_thread::execute([]() {
-                    GameAPI::MoneyManager::ChangeBalance(10000);
-                });
+            std::string cashText = "Cash: " + std::to_string(GameAPI::MoneyManager::GetCash());
+            ImGui::Text(cashText.c_str());
+
+            if (ImGui::Button("Add 10k Cash")) {
+                GameAPI::MoneyManager::ChangeCash(10000);
+            }
+
+            ImGui::Spacing();
+
+            std::string balanceText = "Balance: " + std::to_string(GameAPI::MoneyManager::GetBalance());
+            ImGui::Text(balanceText.c_str());
+            if (ImGui::Button("Add 10k Balance")) {
+                GameAPI::MoneyManager::ChangeBalance(10000);
+            }
+        }
+
+        if (ImGui::Button("Drugpocalypse")) {
+            auto customers = GameAPI::Customer::GetUnlockedCustomers();
+            for (auto customer : customers) {
+                customer.RequestProduct();
             }
         }
 

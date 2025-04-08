@@ -4,7 +4,7 @@
 
 #include "pch.h"
 
-bool __fastcall Hook::Player::hkAreAllPlayersReadyToSleep() {
+bool Hook::Player::hkAreAllPlayersReadyToSleep() {
     static auto oAreAllPlayersReadyToSleep = reinterpret_cast <decltype(&hkAreAllPlayersReadyToSleep)>(pAreAllPlayersReadyToSleep);
 
     auto player = GameAPI::Player::GetLocalPlayer();
