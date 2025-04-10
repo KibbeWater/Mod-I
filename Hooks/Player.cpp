@@ -10,6 +10,11 @@ bool Hook::Player::hkAreAllPlayersReadyToSleep() {
     auto player = GameAPI::Player::GetLocalPlayer();
     if (!player) return false;
 
+    auto playerList = GameAPI::Player::GetAllPlayers();
+    for (auto player : playerList) {
+        if (!player.IsReadyToSleep()) player.SetReadyToSleep(true);
+    }
+
     return player->IsReadyToSleep();
 
     // return oAreAllPlayersReadyToSleep();

@@ -15,7 +15,7 @@ namespace G {
 }
 
 namespace F {
-    inline bool m_bOnePlayerSleep = false;
+    inline bool m_bOnePlayerSleep = true;
 }
 
 #endif //GLOBALS_H

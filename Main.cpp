@@ -2,6 +2,10 @@
 
 void Update() {
     game_thread::_processQueue();
+
+    static GameAPI::Instance* instance = GameAPI::Instance::GetInstance();
+    if (!instance->IsHost())
+        UnityHelpers::NotifyEnvReset();
 }
 
 DWORD WINAPI OnDllAttach(LPVOID lpParameter) {

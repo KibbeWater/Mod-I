@@ -10,6 +10,7 @@
 #include <assert.h>
 #include <iostream>
 #include <vector>
+#include <map>
 #include <mutex>
 #include <dxgi.h>
 #include <d3d11.h>

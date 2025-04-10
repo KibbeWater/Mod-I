@@ -20,6 +20,7 @@ public:
 
     bool IsLocalPlayer();
     bool IsReadyToSleep();
+    void SetReadyToSleep(bool readyToSleep);
 };
 
 } // GameAPI

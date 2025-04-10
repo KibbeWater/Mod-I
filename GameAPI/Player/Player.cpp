@@ -54,4 +54,19 @@ namespace GameAPI {
     bool Player::IsReadyToSleep() {
         return this->_instance->fields._IsReadyToSleep_k__BackingField;
     }
+
+    typedef void (*fWriteSetReadyToSleep)(ScheduleOne_PlayerScripts_Player_o *pThis, bool ready);
+    void Player::SetReadyToSleep(bool readyToSleep) {
+        auto instance = this->_instance;
+        auto klass = this->_instance->klass;
+        game_thread::execute([instance, readyToSleep, klass] {
+            static auto rpcWriter = reinterpret_cast<fWriteSetReadyToSleep>(UnityHelpers::FindRPCMethod(
+                UnityHelpers::Writer,
+                reinterpret_cast<Unity::il2cppClass*>(klass),
+                "SetReadyToSleep"
+                )->m_pMethodPointer);
+
+            rpcWriter(instance, readyToSleep);
+        });
+    }
 } // GameAPI
