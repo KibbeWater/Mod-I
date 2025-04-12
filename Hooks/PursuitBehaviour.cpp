@@ -4,8 +4,11 @@
 
 #include "pch.h"
 
-bool Hook::PursuitBehaviour::hkCanShoot() {
-    // static auto oCanShoot = reinterpret_cast <decltype(&hkCanShoot)>(pCanShoot);
+bool Hook::PursuitBehaviour::hkCanShoot(Unity::il2cppClass* pThis) {
+    ORIGINAL_HOOK(CanShoot);
 
-    return true;
+    if (F::m_bCopAlwaysShoot)
+        return true;
+
+    return oCanShoot(pThis);
 }

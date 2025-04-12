@@ -9,8 +9,8 @@ namespace Hook
 {
     namespace BlackjackInterface
     {
-        inline void* pGetBetFromSliderValue;
-        float hkGetBetFromSliderValue(ScheduleOne_Casino_UI_BlackjackInterface_o* pThis, float percent);
+        inline void* pBetSliderChanged;
+        void hkBetSliderChanged(ScheduleOne_Casino_UI_BlackjackInterface_o* pThis, float amount);
     }
 }
 

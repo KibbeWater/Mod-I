@@ -115,6 +115,12 @@ add_library(Mod_I SHARED Main.cpp
         GameAPI/CashInstance/CashInstance.h
         Hooks/PlayerInventory.cpp
         Hooks/PlayerInventory.h
+        Hooks/TrashGrabber.cpp
+        Hooks/TrashGrabber.h
+        Hooks/Cuke.cpp
+        Hooks/Cuke.h
+        Util/HookHelper.cpp
+        Util/HookHelper.h
 )
 
 target_include_directories(Mod_I PUBLIC

@@ -10,7 +10,7 @@ namespace Hook
     namespace PursuitBehaviour
     {
         inline void* pCanShoot;
-        bool hkCanShoot();
+        bool hkCanShoot(Unity::il2cppClass* pThis);
     }
 }
 

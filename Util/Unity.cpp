@@ -23,6 +23,7 @@ void UnityHelpers::Initialize() {
 
     cacheModule("Assembly-CSharp");
     cacheModule("FishNet.Runtime");
+    cacheModule("UnityEngine.UI");
 }
 
 Unity::il2cppMethodInfo* UnityHelpers::FindMethod(const char* methodName, int args) {

@@ -5,7 +5,7 @@
 #include "pch.h"
 
 void Hook::PlayerInventory::hkUpdate(ScheduleOne_PlayerScripts_PlayerInventory_o* pThis) {
-    static auto oUpdate = reinterpret_cast <decltype(&hkUpdate)>(pUpdate);
+    ORIGINAL_HOOK(Update);
 
     G::m_iPlayerInventory = pThis;
 

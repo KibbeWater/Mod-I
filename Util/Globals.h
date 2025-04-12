@@ -15,7 +15,13 @@ namespace G {
 }
 
 namespace F {
-    inline bool m_bOnePlayerSleep = true;
+    inline bool m_bOnePlayerSleep = false;
+    inline bool m_bTimeRollover = true;
+    inline bool m_bCopAlwaysShoot = true;
+    inline bool m_bFastDrinker = true;
+    inline bool m_bEndlessGrabber = true;
+
+    inline int m_iBlackjackMaxBet = 1000;
 }
 
 #endif //GLOBALS_H

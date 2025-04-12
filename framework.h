@@ -33,6 +33,7 @@
 #include "Util/Memory.h"
 #include "Util/game_thread.h"
 #include "Util/Unity.h"
+#include "Util/HookHelper.h"
 
 // GameAPI
 #include "GameAPI/GameAPI.h"
@@ -44,9 +45,11 @@
 #include "Hooks/BlackjackInterface.h"
 #include "Hooks/PursuitBehaviour.h"
 #include "Hooks/PlayerInventory.h"
+#include "Hooks/TrashGrabber.h"
 #include "Hooks/MoneyManager.h"
 #include "Hooks/TimeManager.h"
 #include "Hooks/Player.h"
+#include "Hooks/Cuke.h"
 #include "Hooks/Hook.h"
 
 // Menu

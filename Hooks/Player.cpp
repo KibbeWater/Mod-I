@@ -5,7 +5,10 @@
 #include "pch.h"
 
 bool Hook::Player::hkAreAllPlayersReadyToSleep() {
-    static auto oAreAllPlayersReadyToSleep = reinterpret_cast <decltype(&hkAreAllPlayersReadyToSleep)>(pAreAllPlayersReadyToSleep);
+    ORIGINAL_HOOK(AreAllPlayersReadyToSleep);
+
+    if (!F::m_bOnePlayerSleep)
+        return oAreAllPlayersReadyToSleep();
 
     auto player = GameAPI::Player::GetLocalPlayer();
     if (!player) return false;
@@ -16,6 +19,4 @@ bool Hook::Player::hkAreAllPlayersReadyToSleep() {
     }
 
     return player->IsReadyToSleep();
-
-    // return oAreAllPlayersReadyToSleep();
 }

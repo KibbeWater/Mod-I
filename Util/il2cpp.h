@@ -2061,4 +2061,63 @@ struct ScheduleOne_ItemFramework_CashInstance_o {
 	ScheduleOne_ItemFramework_CashInstance_Fields fields;
 };
 
+struct ScheduleOne_Equipping_Equippable_Fields : UnityEngine_MonoBehaviour_Fields {
+	struct ScheduleOne_ItemFramework_ItemInstance_o* itemInstance;
+	bool CanInteractWhenEquipped;
+	bool CanPickUpWhenEquipped;
+};
+
+struct ScheduleOne_Equipping_Equippable_StorableItem_Fields : ScheduleOne_Equipping_Equippable_Fields {
+	bool isBuildingStoredItem;
+	bool lookingAtStorageObject;
+	float rotation;
+};
+
+struct ScheduleOne_Equipping_Equippable_Viewmodel_Fields : ScheduleOne_Equipping_Equippable_StorableItem_Fields {
+	struct UnityEngine_Vector3_o localPosition;
+	struct UnityEngine_Vector3_o localEulerAngles;
+	struct UnityEngine_Vector3_o localScale;
+	struct ScheduleOne_AvatarFramework_Equipping_AvatarEquippable_o* AvatarEquippable;
+};
+
+struct ScheduleOne_Equipping_Equippable_Cuke_Fields : ScheduleOne_Equipping_Equippable_Viewmodel_Fields {
+	bool _IsDrinking_k__BackingField;
+	float BaseEnergyGain;
+	float MinEnergyGain;
+	float ConsecutiveReduction;
+	float HealthGain;
+	float AnimationDuration;
+	bool ClearDrugEffects;
+	struct UnityEngine_Animation_o* OpenAnim;
+	struct UnityEngine_Animation_o* DrinkAnim;
+	struct ScheduleOne_Audio_AudioSourceController_o* OpenSound;
+	struct ScheduleOne_Audio_AudioSourceController_o* SlurpSound;
+	struct ScheduleOne_Trash_TrashItem_o* TrashPrefab;
+};
+struct ScheduleOne_Equipping_Equippable_Cuke_VTable {
+	VirtualInvokeData _0_Equals;
+	VirtualInvokeData _1_Finalize;
+	VirtualInvokeData _2_GetHashCode;
+	VirtualInvokeData _3_ToString;
+	VirtualInvokeData _4_Equip;
+	VirtualInvokeData _5_Unequip;
+	VirtualInvokeData _6_Update;
+	VirtualInvokeData _7_StartBuildingStoredItem;
+	VirtualInvokeData _8_StopBuildingStoredItem;
+	VirtualInvokeData _9_PlayEquipAnimation;
+	VirtualInvokeData _10_PlayUnequipAnimation;
+};
+struct ScheduleOne_Equipping_Equippable_Cuke_c {
+	Il2CppClass_1 _1;
+	void* static_fields;
+	Il2CppRGCTXData* rgctx_data;
+	Il2CppClass_2 _2;
+	ScheduleOne_Equipping_Equippable_Cuke_VTable vtable;
+};
+struct ScheduleOne_Equipping_Equippable_Cuke_o {
+	ScheduleOne_Equipping_Equippable_Cuke_c *klass;
+	void *monitor;
+	ScheduleOne_Equipping_Equippable_Cuke_Fields fields;
+};
+
 #endif //IL2CPP_H
